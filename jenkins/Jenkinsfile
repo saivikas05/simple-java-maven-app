@@ -25,6 +25,11 @@ pipeline {
             steps {
                 echo 'Process Completed'
             }
+        }
+        stage('clean up'){
+            steps{
+                deleteDir()
+            }
         }        
     }
 }
